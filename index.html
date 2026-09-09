@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Delicious Bites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="nav-items1">
+                <h1>Delicious Bites</h1>
+                <p>Savor every bite!</p>
+
+            </div>
+
+            <div class="nav-items2">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+
+
+    <main>
+        <section id="hero">
+            <div class="container">
+
+
+                <div class="image">
+                    <img src="assets/pizza.png" alt="hero-image" height="300">
+
+                </div>
+
+
+
+                <div class="hero-about">
+
+                    <h1>Welcome to Delicious Bites!</h1>
+
+                    <p>We are a local restaurant dedicated to serving the freshest, most flavorful dishes in town.
+                        Whether you are craving traditional recipes or quick fast food, our menu has something special
+                        for everyone.</p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="cooking">
+            <h1>Cooking - BTS</h1>
+            <video autoplay loop muted src="assets/video/cooking.mp4"></video>
+        </section>
+
+        <section id="table-section">
+
+            <h2>Our Menu</h2>
+
+            <table style="text-align: center;">
+
+                <thead>
+                    <tr>
+                        <th>Dish Image</th>
+                        <th>Dish Name</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Available Offers</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><img src="assets/z-burger.png" alt="Zinger Burger" width="60"></td>
+                        <td>Zinger Burger</td>
+                        <td rowspan="2">Fast Food</td>
+                        <td>Rs. 500</td>
+                        <td>Free Fries</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="assets/pizza.png" alt="Pizza" width="60"></td>
+                        <td>Fajita Pizza</td>
+                        <td>Rs. 1200</td>
+                        <td>1.5L Drink Free</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="assets/biryani.png" alt="Biryani" width="60"></td>
+                        <td>Chicken Biryani</td>
+                        <td rowspan="2">Desi Food</td>
+                        <td colspan="2">Special Deal: Rs. 400 (No Extra Offers)</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="assets/karahi.png" alt="Karahi" width="60"></td>
+                        <td>Mutton Karahi</td>
+                        <!-- <td>Desi Food</td> -->
+                        <td>Rs. 1800</td>
+                        <td>Free Raita</td>
+                    </tr>
+
+
+                    <tr>
+                        <td><img src="assets/lava-cake.png" alt="Lava Cake" width="60"></td>
+                        <td>Molten Lava Cake</td>
+                        <td>Dessert</td>
+                        <td>Rs. 350</td>
+                        <td>None</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+        </section>
+
+        <section id="special">
+
+            <h1>Chef's Special Items</h1>
+            <ul>
+                <li>Smokey BBQ Platter</li>
+                <li>Special Stuffed Cheese Burger</li>
+                <li>Fresh Mint Margarita</li>
+                <li>Lahori Fried Fish</li>
+                <li>Chicken Reshmi Kebab</li>
+                <li>Loaded Cheesy Fries</li>
+                <li>Creamy Chicken Handi</li>
+                <li>Spicy Peri Peri Wings</li>
+                <li>Mutton Nalli Nihari</li>
+                <li>Special Kulfi Falooda</li>
+            </ul>
+            <h2>Listen in Voice ></h2>
+            <audio src="assets/audio/special items.mp3" controls></audio>
+
+        </section>
+
+
+
+        <section id="framing">
+            <h1>Food In Action</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lcU3pruVyUw?si=IepNtwFXurzWVYYV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="map">
+            <h1>Find Us Here</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13595.559069513125!2d74.3246896554199!3d31.5820706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191b91e5f0326d%3A0x4c01c48fc2e91cd0!2sDelicious%20Bites!5e0!3m2!1sen!2s!4v1788865010077!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
+
+    </main>
+    <footer>
+        <section id="footer-section">
+
+            <div class="footer-logo">
+                <img src="assets/pizza.png" alt="">
+                <h1>Delicious Bites</h1>
+            </div>
+             
+            <div class="footer-container">
+
+                <div class="footer-links">
+                    <h2>Quick Links</h2>
+                    <a href="index.html">Home</a>
+                    <a href="order.html">Order Now</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+    
+                <div class="shortcuts">
+                    <h2>Shortcuts</h2>
+                    <a href="#special">Special Items</a>
+                    <a href="#table-section">Our Menu</a>
+                    <a href="#cooking">Behind The Scenes</a>
+
+                </div>
+
+                <div class="action-links">
+                    <h2>Support</h2>
+                    <a href="#">FAQs</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+                
+                
+
+            </div>
+
+            <div class="hr-sec">
+
+                <hr>
+    
+                    <p class="copyright-text">&copy; 2026 Delicious Bites | A Bano Qabil Web Development Project by Muhammad Zain.</p>
+            </div>
+
+
+        </section>
+
+        
+    </footer>
+
+</body>
+
+</html>

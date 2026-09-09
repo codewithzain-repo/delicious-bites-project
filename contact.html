@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Delicious Bites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="nav-items1">
+                <h1>Delicious Bites</h1>
+                <p>Savor every bite!</p>
+
+            </div>
+
+            <div class="nav-items2">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+
+
+                <div class="image">
+                    <img src="assets/pizza.png" alt="hero-image" height="300">
+
+                </div>
+
+
+
+                <div class="hero-about">
+
+                    <h1>We'd Love to Hear From You!</h1>
+
+                    <p>Whether you want to share your dining experience, ask about our menu, or just say hi, our team is
+                        always here for you.</p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="order-section">
+
+
+            <div class="order-form">
+                <h1>Contact us</h1>
+                <form action="submit.php" method="get">
+
+                    <legend>Ask Your Query!</legend>
+
+
+                    <label for="name">Name: </label>
+
+                    <br>
+
+                    <input type="text" id="name" name="name" placeholder="Enter your Name" required><br>
+
+                    <label for="email">Email:</label>
+
+                    <br>
+
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+                    <br>
+
+                    <label for="contact">Contact No:</label>
+                    <br>
+                    <input type="tel" id="contact" name="contact" placeholder="+9230000000000">
+
+
+                    <br>
+
+                    <label for="subject">Subject:</label><br>
+                    <select name="message_subject" id="subject" required>
+
+                        <option value="">-- Select a Subject --</option>
+                        <option value="feedback">Feedback & Suggestions</option>
+                        <option value="complaint">Order Issue / Complaint</option>
+                        <option value="catering">Event Catering</option>
+                        <option value="general">General Inquiry</option>
+
+                    </select>
+
+                    <br>
+
+                    <label for="user-message">Your Query!</label>
+
+                    <br>
+
+                    <textarea id="user-message" name="contact_message" rows="6" cols="45"
+                        placeholder="Write your message or feedback here..." required></textarea>
+
+
+
+
+                    <br>
+
+                    <input class="reset" type="reset">
+                    <input class="submit" type="submit">
+
+
+
+
+
+
+
+
+
+
+
+                </form>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <footer style="margin-top: 40px;">
+        <section id="footer-section">
+
+            <div class="footer-logo">
+                <img src="assets/pizza.png" alt="">
+                <h1>Delicious Bites</h1>
+            </div>
+
+            <div class="footer-container">
+
+                <div class="footer-links">
+                    <h2>Quick Links</h2>
+                    <a href="index.html">Home</a>
+                    <a href="order.html#order-section">Order Now</a>
+                    <a href="contact.html">Contact us</a>
+                </div>
+
+                <div class="shortcuts">
+                    <h2>Shortcuts</h2>
+                    <a href="index.html#special">Special Items</a>
+                    <a href="index.html#table-section">Our Menu</a>
+                    <a href="index.html#cooking">Behind The Scenes</a>
+
+                </div>
+
+                <div class="action-links">
+                    <h2>Support</h2>
+                    <a href="#">FAQs</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="hr-sec">
+
+                <hr>
+
+                <p class="copyright-text">&copy; 2026 Delicious Bites | A Bano Qabil Web Development Project by Muhammad
+                    Zain.</p>
+            </div>
+
+
+        </section>
+
+
+    </footer>
+
+</body>
+
+</html>
