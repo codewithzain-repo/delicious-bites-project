@@ -235,23 +235,25 @@
         
     </footer>
 
-    <!-- Voiceflow ChatAgent -->
-<script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '6aa42fb8d3408e9ee3345361' },
-          url: 'https://general-runtime.voiceflow.com',
-          voice: {
-            url: "https://runtime-api.voiceflow.com"
-          }
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-  })(document, 'script');
+   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'YAHAN_APNA_PRODUCTION_CHAT_URL_PASTE_KAREIN',
+    mode: 'window',
+    initialMessages: [
+      'Assalam-o-Alaikum! 👋 Welcome to Delicious Bites. Aap kya order karna chahenge?'
+    ],
+    i18n: {
+      en: {
+        title: 'Delicious Bites',
+        subtitle: "We're here to take your order 24/7.",
+        inputPlaceholder: 'Type your order...',
+      },
+    },
+  });
 </script>
-<!-- End of Voiceflow ChatAgent Embed Code -->
 </body>
 
 </html>
