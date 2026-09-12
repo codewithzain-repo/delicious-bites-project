@@ -14,26 +14,29 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+   <header>
+    <nav class="navbar">
+        <div class="nav-items1">
+            <h1>Delicious Bites</h1>
+            <p>Savor every bite!</p>
+        </div>
 
-            <div class="nav-items1">
-                <h1>Delicious Bites</h1>
-                <p>Savor every bite!</p>
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
 
-            </div>
-
-            <div class="nav-items2">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="order.html">Order</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
-                </ul>
-            </div>
-
-
-        </nav>
-    </header>
+        <div class="nav-items2" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
 
 
@@ -217,97 +220,7 @@
 
         
     </footer>
-
-    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-
-    <style>
-  :root {
-    /* ===== Delicious Bites — Warm Restaurant Theme ===== */
-    /* Primary = appetizing tomato-red, Secondary = golden/mustard */
-    --chat--color--primary: #e8552d;
-    --chat--color--primary-shade-50: #d24a26;
-    --chat--color--primary--shade-100: #bd411f;
-    --chat--color--secondary: #f2a007;      /* golden accent */
-    --chat--color-secondary-shade-50: #d98d05;
-    --chat--color-white: #ffffff;
-    --chat--color-light: #fff8f0;            /* creamy background */
-    --chat--color-light-shade-50: #f7ecdd;
-    --chat--color-light-shade-100: #e8d7c2;
-    --chat--color-medium: #d8c6b2;
-    --chat--color-dark: #3a2417;             /* rich brown text */
-    --chat--color-disabled: #c9b9a7;
-    --chat--color-typing: #6b4a34;
-
-    /* Header */
-    --chat--header--background: #3a2417;      /* deep brown header */
-    --chat--header--color: #fff8f0;
-    --chat--heading--font-size: 1.6em;
-
-    /* Window size */
-    --chat--window--width: 400px;
-    --chat--window--height: 600px;
-
-    /* Messages */
-    --chat--message--bot--background: #ffffff;
-    --chat--message--bot--color: #3a2417;
-    --chat--message--user--background: #e8552d;
-    --chat--message--user--color: #ffffff;
-    --chat--message--border-radius: 12px;
-
-    /* Toggle button (chat bubble) */
-    --chat--toggle--background: #e8552d;
-    --chat--toggle--hover--background: #d24a26;
-    --chat--toggle--active--background: #bd411f;
-
-    /* Body & footer */
-    --chat--body--background: #fff8f0;
-    --chat--footer--background: #fff8f0;
-    --chat--footer--color: #3a2417;
-  }
-
-  /* ===== Scrollbar for long conversations ===== */
-  /* The messages list scrolls automatically; this styles + guarantees it */
-  .chat-messages-list {
-    overflow-y: auto !important;
-    scrollbar-width: thin;                 /* Firefox */
-    scrollbar-color: #e8552d #f7ecdd;      /* Firefox: thumb, track */
-  }
-  /* Chrome / Edge / Safari */
-  .chat-messages-list::-webkit-scrollbar {
-    width: 8px;
-  }
-  .chat-messages-list::-webkit-scrollbar-track {
-    background: #f7ecdd;
-    border-radius: 8px;
-  }
-  .chat-messages-list::-webkit-scrollbar-thumb {
-    background-color: #e8552d;
-    border-radius: 8px;
-  }
-  .chat-messages-list::-webkit-scrollbar-thumb:hover {
-    background-color: #d24a26;
-  }
-</style>
-<script type="module">
-  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-  createChat({
-    webhookUrl: 'https://zaintanveer.app.n8n.cloud/webhook/8925e35f-3db9-450b-8cf9-2c3593f48ddc/chat',
-    mode: 'window',
-    initialMessages: [
-      'Assalam-o-Alaikum! 👋 Welcome to Delicious Bites. Aap kya order karna chahenge?'
-    ],
-    i18n: {
-      en: {
-        title: 'Delicious Bites',
-        subtitle: "We're here to take your order 24/7.",
-        inputPlaceholder: 'Type your order...',
-      },
-    },
-  });
-</script>
-
-    
+<script src="script.js"></script>
 </body>
 
 </html>
