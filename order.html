@@ -61,14 +61,147 @@
             </div>
         </section>
 
+        <section id="featured">
+
+          <h1>Today's Special Deals</h1>
+
+          <div class="cards">
+
+              <article class="card card-1">
+
+               <img src="assets/Special Deals/zinger-burger-with-juice-png--removebg-preview.png" alt="">
+
+               <h3>Zinger Burger Combo</h3>
+
+               <p>1 Crispy Zinger + Regular Fries + 345ml Drink.</p>
+
+               <p><strong>Price: Rs. 850</strong></p>
+
+               <div class="checkout">
+                   <label for="Qty">Quantity </label>
+                   <input type="number" id="n">
+                   <a href="#order-form"><button type="button">Checkout Now</button></a>
+
+               </div>
+
+              </article>
+
+
+              <article class="card card-2">
+
+               <img src="assets/Special Deals/Classic Seekh Kebab Feast.png" alt="">
+
+               <h3>Classic Seekh Kebab Feast</h3>
+
+               <p>Spicy Seekh Kebabs served hot <br> with naan and chutney.</p>
+
+               <p><strong>Price: Rs. 950</strong></p>
+
+               <div class="checkout">
+                   <label for="Qty">Quantity </label>
+                   <input type="number" id="n">
+                   <a href="#order-form"><button type="button">Checkout Now</button></a>
+
+               </div>
+
+              </article>
+
+              <article class="card card-3">
+
+               <img src="assets/Special Deals/Classic Fish & Chips.png" alt="">
+
+               <h3>Classic Fish & Chips</h3>
+
+               <p>Crispy battered fish served with mushy peas, golden fries.</p>
+
+               <p><strong>Price: Rs. 1,150</strong></p>
+
+               <div class="checkout">
+                   <label for="Qty">Quantity </label>
+                   <input type="number" id="n">
+                   <a href="#order-form"><button type="button">Checkout Now</button></a>
+
+               </div>
+
+              </article>
+
+              <article class="card card-4">
+
+               <img src="assets/Special Deals/BBQ_Pizza_Combo-removebg-preview.png" alt="">
+
+               <h3>BBQ Pizza Combo</h3>
+
+               <p>Delicious BBQ chicken pizza with <br> fries + half-litre regular Coke.</p>
+
+               <p><strong>Price: Rs. 1,350</strong></p>
+
+               <div class="checkout">
+                   <label for="Qty">Quantity </label>
+                   <input type="number" id="n">
+                   <a href="#order-form"><button type="button">Checkout Now</button></a>
+
+               </div>
+
+              </article>
+
+              <article class="card card-5">
+
+               <img src="assets/Special Deals/Family Karahi Deal.png" alt="">
+
+               <h3>Family Karahi Deal</h3>
+
+               <p>Authentic Chicken Karahi, fresh naans & 1.5L Coke.</p>
+
+               <p><strong>Price: Rs. 2,150</strong></p>
+
+               <div class="checkout">
+                   <label for="Qty">Quantity </label>
+                   <input type="number" id="n">
+                   <a href="#order-form"><button type="button">Checkout Now</button></a>
+
+               </div>
+
+              </article>
+
+              <article class="card card-6">
+
+               <img src="assets/Special Deals/special chicken biryani deal.png" alt="">
+
+               <h3>Special Chicken Biryani (L)</h3>
+
+               <p>Chicken Biryani served with fresh salad, raita, and a regular coke.</p>
+
+               <p><strong>Price: Rs. 850</strong></p>
+
+               <div class="checkout">
+                   <label for="Qty">Quantity </label>
+                   <input type="number" id="n">
+                   <a href="#order-form"><button type="button">Checkout Now</button></a>
+
+               </div>
+
+              </article>
+
+              
+
+          </div>
+
+
+
+        </section>
+
+
+        
+
         <section id="order-section">
 
 
             <div class="order-form">
-                <h1>Place Your Order</h1>
-                <form action="submit.php" method="get">
+                <h1>Place Your Order Manually</h1>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="b76a9b47-ecbd-4aa9-8059-2c448a47b29b">
 
-                    <legend>Customer Details</legend>
+                    <legend>Confirm Your Order!</legend>
 
 
                     <label for="name">Name: </label>
@@ -235,93 +368,6 @@
         
     </footer>
 
-   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-    <style>
-  :root {
-    /* ===== Delicious Bites — Warm Restaurant Theme ===== */
-    /* Primary = appetizing tomato-red, Secondary = golden/mustard */
-    --chat--color--primary: #e8552d;
-    --chat--color--primary-shade-50: #d24a26;
-    --chat--color--primary--shade-100: #bd411f;
-    --chat--color--secondary: #f2a007;      /* golden accent */
-    --chat--color-secondary-shade-50: #d98d05;
-    --chat--color-white: #ffffff;
-    --chat--color-light: #fff8f0;            /* creamy background */
-    --chat--color-light-shade-50: #f7ecdd;
-    --chat--color-light-shade-100: #e8d7c2;
-    --chat--color-medium: #d8c6b2;
-    --chat--color-dark: #3a2417;             /* rich brown text */
-    --chat--color-disabled: #c9b9a7;
-    --chat--color-typing: #6b4a34;
-
-    /* Header */
-    --chat--header--background: #3a2417;      /* deep brown header */
-    --chat--header--color: #fff8f0;
-    --chat--heading--font-size: 1.6em;
-
-    /* Window size */
-    --chat--window--width: 400px;
-    --chat--window--height: 600px;
-
-    /* Messages */
-    --chat--message--bot--background: #ffffff;
-    --chat--message--bot--color: #3a2417;
-    --chat--message--user--background: #e8552d;
-    --chat--message--user--color: #ffffff;
-    --chat--message--border-radius: 12px;
-
-    /* Toggle button (chat bubble) */
-    --chat--toggle--background: #e8552d;
-    --chat--toggle--hover--background: #d24a26;
-    --chat--toggle--active--background: #bd411f;
-
-    /* Body & footer */
-    --chat--body--background: #fff8f0;
-    --chat--footer--background: #fff8f0;
-    --chat--footer--color: #3a2417;
-  }
-
-  /* ===== Scrollbar for long conversations ===== */
-  /* The messages list scrolls automatically; this styles + guarantees it */
-  .chat-messages-list {
-    overflow-y: auto !important;
-    scrollbar-width: thin;                 /* Firefox */
-    scrollbar-color: #e8552d #f7ecdd;      /* Firefox: thumb, track */
-  }
-  /* Chrome / Edge / Safari */
-  .chat-messages-list::-webkit-scrollbar {
-    width: 8px;
-  }
-  .chat-messages-list::-webkit-scrollbar-track {
-    background: #f7ecdd;
-    border-radius: 8px;
-  }
-  .chat-messages-list::-webkit-scrollbar-thumb {
-    background-color: #e8552d;
-    border-radius: 8px;
-  }
-  .chat-messages-list::-webkit-scrollbar-thumb:hover {
-    background-color: #d24a26;
-  }
-</style>
-<script type="module">
-  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-  createChat({
-    webhookUrl: 'https://zaintanveer.app.n8n.cloud/webhook/8925e35f-3db9-450b-8cf9-2c3593f48ddc/chat',
-    mode: 'window',
-    initialMessages: [
-      'Assalam-o-Alaikum! 👋 Welcome to Delicious Bites. Aap kya order karna chahenge?'
-    ],
-    i18n: {
-      en: {
-        title: 'Delicious Bites',
-        subtitle: "We're here to take your order 24/7.",
-        inputPlaceholder: 'Type your order...',
-      },
-    },
-  });
-</script>
 </body>
 
 </html>
