@@ -670,7 +670,170 @@ footer #footer-section .footer-logo{
 
 }
 
+/* ---------------------------------------------------------- */
+/* Cold Drinks Menu */
+
+#cold-drinks{
+
+    width: 90vw;
+
+}
+
+#cold-drinks h1{
+    color: var(--primarycolor);
+}
+
+#cold-drinks .cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(88, 72, 50); */
+    width: 80vw;
+    justify-content: center;
+    margin: 40px auto;
+    gap: 50px;
+    
+
+    
+}
+#cold-drinks .card{
+
+    height:410px;
+    width: 300px;
+    background-image: linear-gradient(to right, rgba(82, 44, 44, 0.253), rgba(21, 21, 22, 0.507));
+    border-radius: 20px;
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+    
+
+}
+
+#cold-drinks .card:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 1px 1px 10px var(--primarycolor);
+    cursor: pointer;
+
+}
+
+#cold-drinks .card img{
+    height: 200px;
+    width: 320px;
+    margin-top: 10px;
+  
+}
+
+#cold-drinks .card-1 img{
+
+    height: 180px ;
+  
+
+}    
+
+#cold-drinks .card-2 img{
+
+    height: 265px ;
+    width: 200px;
+
+}    
+
+#cold-drinks .card-3 img{
+
+    height: 180px ;
+
+}    
+#cold-drinks .card-5 img{
+
+    height: 265px ;
+    width: 200px;
+
+}   
+
+#cold-drinks .card-6 img{
+
+    height: 180px ;
+
+}    
+
+
+#cold-drinks .card h3{
+    color: var(--secondarycolor);
+}
+#cold-drinks .card p:first-of-type{
+    color: var(--secondarycolor);
+    text-align: center;
+    margin-top: 10px;
+    
+}
+#cold-drinks .card p:last-of-type{
+    color: var(--secondarycolor);
+    text-align: center;
+    margin-top: 3px;
+    
+}
+
+#cold-drinks .card .checkout{
+    display: flex;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+
+}
+
+
+#cold-drinks .card .checkout label{
+    color:  var(--secondarycolor);
+}
+#cold-drinks .card .checkout input{
+
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.808);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-indent: 10px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(82, 44, 44, 0.253), rgba(21, 21, 22, 0.507));
+
+}
+
+
+#cold-drinks .card a button {
+    /* margin-top: 10px; */
+    padding: 5px 10px; 
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: var(--primarycolor);
+    color: black;
+    transition: all 0.2s ease-in-out;
+
+    
+}
+
+#cold-drinks .card a button:hover{
+    background-color: rgb(0, 44, 240) ;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
 /* ----------------------------------------------------- */
+
+
+/* Cards Animations */
+
+#featured .card{
+    transition: all 0.2s ease-in-out;
+}
+#featured .card:hover{
+    transform: rotateZ(-2deg);
+}
 
 
 #order-section h1{
@@ -690,6 +853,20 @@ footer #footer-section .footer-logo{
     border-radius: 20px;
 }
 
+#cold-drinks .card{
+
+    transition: all 0.2s ease-in-out;
+
+}
+#cold-drinks .card:hover{
+
+    transform: rotateZ(-2deg);
+
+
+    
+}
+
+/* ---------------------------------------------- */
 
 
 
@@ -773,6 +950,8 @@ textarea{
     
     background-color: transparent;
 }
+
+
 
 
 
