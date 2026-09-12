@@ -453,10 +453,142 @@ footer #footer-section .footer-logo{
     align-items: center;
 }
 
+
+#featured .cards{
+    display: flex;
+
+    justify-content: center;
+    
+   
+
+    
+
+    
+}
+
 }
 
 
 /* ORDER PAGE */
+
+#featured{
+
+    width: 90vw;
+
+}
+
+#featured h1{
+    color: var(--primarycolor);
+}
+
+#featured .cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: rgb(88, 72, 50); */
+    width: 80vw;
+    justify-content: center;
+    margin: 40px auto;
+    gap: 50px;
+    
+
+    
+}
+#featured .card{
+
+    height:410px;
+    width: 300px;
+    background-image: linear-gradient(to right, rgba(82, 44, 44, 0.253), rgba(21, 21, 22, 0.507));
+    border-radius: 20px;
+    border: 1px solid wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+    
+
+}
+
+#featured .card:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px var(--primarycolor);
+    cursor: pointer;
+
+}
+
+#featured .card img{
+    height: 200px;
+    width: 200px;
+    margin-top: 10px;
+  
+}
+
+#featured .card h3{
+    color: var(--secondarycolor);
+}
+#featured .card p:first-of-type{
+    color: var(--secondarycolor);
+    text-align: center;
+    margin-top: 10px;
+    
+}
+#featured .card p:last-of-type{
+    color: var(--secondarycolor);
+    text-align: center;
+    margin-top: 3px;
+    
+}
+
+#featured .card .checkout{
+    display: flex;
+    height: 100px;
+    /* background-color: antiquewhite; */
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+
+}
+
+
+#featured .card .checkout label{
+    color:  var(--secondarycolor);
+}
+#featured .card .checkout input{
+
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.808);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-indent: 10px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(82, 44, 44, 0.253), rgba(21, 21, 22, 0.507));
+
+}
+
+
+#featured .card a button {
+    /* margin-top: 10px; */
+    padding: 5px 10px; 
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: var(--primarycolor);
+    color: black;
+    transition: all 0.2s ease-in-out;
+
+    
+}
+
+#featured .card a button:hover{
+    background-color: rgb(0, 44, 240) ;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+/* ----------------------------------------------------- */
 
 
 #order-section h1{
